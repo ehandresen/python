@@ -9,4 +9,7 @@ class CashRegister:
         self.total_price += price
     
     def get_count(self):
-        return self.item_count
+        return f'Items: {self.item_count}'
+    
+    def get_total(self):
+        return f'Total: ${self.total_price}'
