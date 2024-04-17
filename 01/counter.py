@@ -11,6 +11,9 @@ class Counter:
     def undo(self):
         self.value -= 1
 
+        if self.value < 0:
+            self.reset()
+
     def reset(self):
         self.value = 0
     
@@ -22,10 +25,12 @@ tally.click()
 tally.click()
 
 total = tally.get_value()
-print(total)
+print(total)#3
 
+tally.undo()
+tally.undo()
 tally.undo()
 tally.undo()
 
 total = tally.get_value()
-print(total)
+print(total) #0
