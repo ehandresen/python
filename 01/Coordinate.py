@@ -17,6 +17,10 @@ class Coordinate:
         y = self.y - other.y
 
         return Coordinate(x, y)
+    
+    # other override methods:
+    # __mul__, eq, len, lt (multiply, equality, length, lower then)
+    # and many others!
         
 
 c1 = Coordinate(7, 9)
